@@ -1,0 +1,13 @@
+def average_age_by_team(team_members, team_name: str):
+    total_age = 0
+    headcount = 0
+
+for member in team_members:
+    if (member['소속'] == team_name):
+        total_age += member['나이']
+        headcount += 1
+
+    average_age = total_age / headcount
+    average_age = round(average_age, 2)
+
+    return average_age
